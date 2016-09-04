@@ -22,7 +22,7 @@ use Cake\Utility\Text;
  */
 class ArtigoTable extends Table
 {
-
+//adicionado comentário
     /**
      * Initialize method
      *
