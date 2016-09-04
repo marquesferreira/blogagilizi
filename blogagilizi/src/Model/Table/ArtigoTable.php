@@ -51,10 +51,11 @@ class ArtigoTable extends Table
                     'dir' => 'photo_dir', // defaults to `dir`
                     'size' => 'photo_size', // defaults to `size`
                     'type' => 'photo_type', // defaults to `type`
+                      'nameCallback' => 'fileRename',
                 ],
 
             ],
-            'nameCallback' => 'filename',
+          
         ]);
     }
 
@@ -93,8 +94,16 @@ class ArtigoTable extends Table
         return $validator;
     }
 public function fileRename($currentName,$data,$field) {
+     debug($this->data);
+        debug($this->field);
+        debug($this->entity['titulo']);
 
-return $this->currentName;
+
+
+    return     $this->emtity['titulo'];
+
+        
+
 }
     /**
      * Returns a rules checker object that will be used for validating
